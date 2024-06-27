@@ -1,16 +1,16 @@
-import Header from "./components/Header"
-import Food from "./components/Food"
-import Footer from "./components/Footer"
+import Header from "./components/Header";
+import Food from "./components/Food";
+import Footer from "./components/Footer";
+import Card from "./components/Card";
 function App() {
-
-
   return (
     <>
-      <Header/>
+      <Card />
+      {/* <Header/>
       <Food/>
-      <Footer/>
+      <Footer/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
