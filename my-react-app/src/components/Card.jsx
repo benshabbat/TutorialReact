@@ -3,8 +3,8 @@ const Card = () => {
   return (
     <div className="card">
         <img src={img_my_profile} alt="my profile" className="card-img"></img>
-        <h2>David Chen Benshabbat</h2>
-        <p>i teaching how to make card component</p>
+        <h2 className="card-name">David Chen Benshabbat</h2>
+        <p className="card-text">i teaching how to make card component</p>
     </div>
   )
 }
