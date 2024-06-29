@@ -1,6 +1,9 @@
-import style from "./button.module.css";
+import "./button,css"//css external
+import style from "./button.module.css";//css module
 
 const Button = () => {
+    
+    //css inline
   const buttonStyle = {
     backgroundColor: "blueviolet",
     borderRadius: "20%",
@@ -10,8 +13,9 @@ const Button = () => {
     cursor: "pointer",
   };
   return (
+    //css inline
     <button style={buttonStyle}>Click me</button>
-    // <button className={style.button}>Click me</button>
+    // <button className={style.button}>Click me</button>//css module
   );
 };
 
