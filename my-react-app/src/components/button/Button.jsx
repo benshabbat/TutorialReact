@@ -1,7 +1,8 @@
+import style from "./button.module.css";
 
 const Button = () => {
   return (
-    <button>Click me</button>
+    <button className={style.button}>Click me</button>
   )
 }
 
