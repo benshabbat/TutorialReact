@@ -1,4 +1,4 @@
-import "./button,css"//css external
+import "./button.css"//css external
 import style from "./button.module.css";//css module
 
 const Button = () => {
@@ -13,9 +13,10 @@ const Button = () => {
     cursor: "pointer",
   };
   return (
-    //css inline
-    <button style={buttonStyle}>Click me</button>
+  
+    // <button style={buttonStyle}>Click me</button>  //css inline
     // <button className={style.button}>Click me</button>//css module
+    // <button className="button">Click me</button>//css external  //css inline
   );
 };
 
