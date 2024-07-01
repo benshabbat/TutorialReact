@@ -14,7 +14,7 @@ const Button = () => {
   };
   return (
   
-    // <button style={buttonStyle}>Click me</button>  //css inline
+    <button style={buttonStyle}>Click me</button>  //css inline
     // <button className={style.button}>Click me</button>//css module
     // <button className="button">Click me</button>//css external  //css inline
   );

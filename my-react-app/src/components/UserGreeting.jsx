@@ -1,7 +1,13 @@
 
 const UserGreeting = (props) => {
   return (
-    <div>UserGreeting</div>
+    <div>
+        {props.isLoggedIn?(
+
+        <h1>Welcome {props.username} </h1>
+        ):(<h1>Please log in</h1>)
+    }
+    </div>
   )
 }
 

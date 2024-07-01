@@ -3,10 +3,12 @@ import Food from "./components/Food";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
 import Button from "./components/button/Button";
+import UserGreeting from "./components/UserGreeting";
 function App() {
   return (
     <>
-      <Button />
+      {/* <Button /> */}
+      <UserGreeting isLoggedIn={true} username="Benshabbat"/>
       {/* <Card /> */}
       {/* <Header/>
       <Food/>
