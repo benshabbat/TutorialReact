@@ -15,6 +15,9 @@ UserGreeting.proptypes={
     isLoggedIn: PropTypes.bool,
     username: PropTypes.string,
 }
-
+UserGreeting.defaultProps={
+    isLoggedIn:false,
+    username: "Guest"
+}
 
 export default UserGreeting;
