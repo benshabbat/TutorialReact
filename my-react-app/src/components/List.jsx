@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const List = (props) => {
   const itemList = props.items;
   const itemCategory = props.category;
@@ -15,6 +17,17 @@ const List = (props) => {
       <ul className="list-items">{listItems}</ul>
     </>
   );
+};
+
+List.proptypes = {
+  category: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      calories: PropTypes.number,
+    })
+  ),
 };
 
 List.defaultProps = {
