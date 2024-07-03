@@ -33,3 +33,17 @@
   border-radius: 4px;
   margin-bottom: 8px;
 }
+
+.list-items li {
+  text-align: center;
+  color: darkslateblue;
+  font-size: 1.5em;
+  list-style: none;
+  
+}
+.list-items li:hover {
+  cursor: pointer;
+  background-color: hsl(248, 35%, 65%);
+
+  
+}
