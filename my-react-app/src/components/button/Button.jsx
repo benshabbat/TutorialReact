@@ -12,9 +12,13 @@ const Button = () => {
     padding: "5px 10px",
     cursor: "pointer",
   };
+
+  const handleClick=()=>{
+    console.log("Clicked")
+  }
   return (
   
-    <button style={buttonStyle}>Click me</button>  //css inline
+    <button style={buttonStyle} onClick={handleClick}>Click me</button>  //css inline
     // <button className={style.button}>Click me</button>//css module
     // <button className="button">Click me</button>//css external  //css inline
   );
