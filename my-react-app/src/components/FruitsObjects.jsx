@@ -10,10 +10,10 @@ const FruitsObjects = () => {
   const highCal = fruits.filter(fruit=>fruit.calories >=80)
   
   const ascOrdername= fruits.sort((a,b)=>a.name.localeCompare(b.name))//sort alphabet
-  const descOrdername= fruits.sort((b,a)=>a.name.localeCompare(b.name))//reverse sort alphabet
+  const descOrdername= fruits.sort((a,b)=>b.name.localeCompare(a.name))//reverse sort alphabet
 
   const ascOrderCal = fruits.sort((a,b)=>a.calories - b.calories);//sort numeric
-  const descOrderCal = fruits.sort((b,a)=>a.calories - b.calories);//reverse sort numeric
+  const descOrderCal = fruits.sort((a,b)=>b.calories - a.calories);//reverse sort numeric
   
   const listFruits = fruits.map((fruit) => {
     return (
