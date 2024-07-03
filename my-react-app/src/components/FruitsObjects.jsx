@@ -10,6 +10,7 @@ const FruitsObjects = () => {
   const highCal = fruits.filter(fruit=>fruit.calories >=80)
 
   const ascOrderCal = fruits.sort((a,b)=>a.calories - b.calories);//sort numeric
+  const descOrderCal = fruits.sort((b,a)=>a.calories - b.calories);//reverse sort numeric
   
   const listFruits = fruits.map((fruit) => {
     return (
