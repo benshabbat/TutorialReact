@@ -5,6 +5,10 @@ const FruitsObjects = () => {
     { id: 3, name: "banana", calories: 88.7, gram: 100 },
     { id: 4, name: "orange", calories: 47.1, gram: 100 },
   ];
+  
+  const lowCal = fruits.filter(fruit=>fruit.calories <80)
+  const highCal = fruits.filter(fruit=>fruit.calories >=80)
+  
   const listFruits = fruits.map((fruit) => {
     return (
       <li key={fruit.id}>
@@ -12,6 +16,7 @@ const FruitsObjects = () => {
       </li>
     );
   });
+  
   return <ul>{listFruits}</ul>;
 };
 
