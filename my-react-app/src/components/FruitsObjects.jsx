@@ -8,6 +8,9 @@ const FruitsObjects = () => {
   
   const lowCal = fruits.filter(fruit=>fruit.calories <80)
   const highCal = fruits.filter(fruit=>fruit.calories >=80)
+  
+  const ascOrdername= fruits.sort((a,b)=>a.name.localeCompare(b.name))//sort alphabet
+  const descOrdername= fruits.sort((b,a)=>a.name.localeCompare(b.name))//reverse sort alphabet
 
   const ascOrderCal = fruits.sort((a,b)=>a.calories - b.calories);//sort numeric
   const descOrderCal = fruits.sort((b,a)=>a.calories - b.calories);//reverse sort numeric
