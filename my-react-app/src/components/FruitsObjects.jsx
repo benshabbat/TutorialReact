@@ -25,4 +25,6 @@ const FruitsObjects = () => {
 
 };
 
+
+
 export default FruitsObjects;

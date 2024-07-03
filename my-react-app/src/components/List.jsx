@@ -1,5 +1,3 @@
-import React from "react";
-
 const List = (props) => {
   const itemList = props.items;
   const itemCategory = props.category;
@@ -17,6 +15,11 @@ const List = (props) => {
       <ul className="list-items">{listItems}</ul>
     </>
   );
+};
+
+List.defaultProps = {
+  category: "Category",
+  items: [],
 };
 
 export default List;
