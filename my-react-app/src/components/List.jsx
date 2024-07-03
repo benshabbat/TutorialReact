@@ -13,8 +13,8 @@ const List = (props) => {
   });
   return (
     <>
-      <h2>{itemCategory}</h2>
-      <ul>{listItems}</ul>
+      <h2 className="list-category">{itemCategory}</h2>
+      <ul className="list-items">{listItems}</ul>
     </>
   );
 };
