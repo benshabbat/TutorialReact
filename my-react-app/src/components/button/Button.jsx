@@ -16,9 +16,12 @@ const Button = () => {
   const handleClick=()=>{
     console.log("Clicked")
   }
+  const handleClick2=(e)=>{
+    console.log(e)
+  }
   return (
   
-    <button style={buttonStyle} onClick={handleClick}>Click me</button>  //css inline
+    <button style={buttonStyle} onClick={(e)=>handleClick2(e)}>Click me</button>  //css inline
     // <button className={style.button}>Click me</button>//css module
     // <button className="button">Click me</button>//css external  //css inline
   );

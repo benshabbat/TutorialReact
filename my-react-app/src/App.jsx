@@ -10,10 +10,10 @@ import FruitsObjects from "./components/FruitsObjects";
 function App() {
   return (
     <>
-      <FruitsObjects />
+      {/* <FruitsObjects /> */}
       {/* <Fruits /> */}
 
-      {/* <Button /> */}
+      <Button />
       {/* <UserGreeting isLoggedIn={true} username="Benshabbat"/> */}
       {/* <Card /> */}
       {/* <Header/>
