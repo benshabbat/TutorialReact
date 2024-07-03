@@ -6,9 +6,11 @@ const FruitsObjects = () => {
         {id:1,name:'banana',calories:88.7,gram:100},
         {id:1,name:'orange',calories:47.1,gram:100},
     ]
-
+    const listFruits = fruits.map(fruit=>{
+        <li key={fruit.id}>Name:{fruit.name} Calories:{fruit.calories}</li>
+    })
   return (
-    <div>FruitsObjects</div>
+    <div>{listFruits}</div>
   )
 }
 
