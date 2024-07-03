@@ -1,3 +1,5 @@
+import List from "./List";
+
 const FruitsObjects = () => {
   const fruits = [
     { id: 1, name: "apple", calories: 52.1, gram: 100 },
@@ -15,15 +17,12 @@ const FruitsObjects = () => {
   const ascOrderCal = fruits.sort((a,b)=>a.calories - b.calories);//sort numeric
   const descOrderCal = fruits.sort((a,b)=>b.calories - a.calories);//reverse sort numeric
   
-  const listFruits = fruits.map((fruit) => {
-    return (
-      <li key={fruit.id}>
-        Name:{fruit.name} Calories:{fruit.calories}
-      </li>
-    );
-  });
+
   
-  return <ul>{listFruits}</ul>;
+  return<List items={fruits} category="Fruits"/>
+  
+  
+
 };
 
 export default FruitsObjects;
